@@ -1,0 +1,88 @@
+.goal-card{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    backdrop-filter:blur(16px);
+
+    border-radius:18px;
+
+    padding:24px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+.goal-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:20px;
+}
+
+.goal-header h2{
+    color:white;
+    font-size:20px;
+}
+
+.goal-header span{
+    color:#22C55E;
+    font-weight:600;
+}
+
+.goal-circle{
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:25px 0;
+}
+
+.goal-circle svg{
+    transform:rotate(-90deg);
+}
+
+.bg-circle{
+    fill:none;
+    stroke:rgba(255,255,255,.08);
+    stroke-width:10;
+}
+
+.progress-circle{
+    fill:none;
+    stroke:#6366F1;
+    stroke-width:10;
+    stroke-linecap:round;
+
+    stroke-dasharray:440;
+    transition:.8s ease;
+}
+
+.goal-text{
+    position:absolute;
+    text-align:center;
+}
+
+.goal-text h1{
+    color:white;
+    font-size:34px;
+}
+
+.goal-text p{
+    color:#94A3B8;
+}
+
+.goal-info{
+    display:flex;
+    justify-content:space-between;
+    text-align:center;
+}
+
+.goal-info h3{
+    color:white;
+}
+
+.goal-info span{
+    color:#94A3B8;
+    font-size:14px;
+}

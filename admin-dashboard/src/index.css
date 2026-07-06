@@ -1,0 +1,74 @@
+/* ===========================
+   GLOBAL RESET
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* ===========================
+   DARK THEME (DEFAULT)
+=========================== */
+
+body {
+  background: #0F172A;
+  color: #E2E8F0;
+}
+
+body[data-theme="dark"] {
+  background: #0F172A;
+  color: #E2E8F0;
+}
+
+/* ===========================
+   LIGHT THEME
+=========================== */
+
+body[data-theme="light"] {
+  background: #F8FAFC;
+  color: #111827;
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+button {
+  font-family: inherit;
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F172A;
+}

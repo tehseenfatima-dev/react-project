@@ -1,0 +1,13 @@
+.messages {
+  padding: 10px;
+}
+
+.messages h1 {
+  margin-bottom: 10px;
+}
+
+.message-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}

@@ -1,0 +1,275 @@
+/* =========================
+   SETTINGS PAGE
+========================= */
+
+.settings{
+    display:flex;
+    gap:30px;
+    color:#E2E8F0;
+    padding:10px;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.settings-sidebar{
+    width:230px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:20px;
+
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+
+    height:fit-content;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.settings-sidebar button{
+
+    background:transparent;
+
+    color:#CBD5E1;
+
+    border:none;
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    text-align:left;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.settings-sidebar button:hover{
+
+    background:rgba(99,102,241,.15);
+
+    color:white;
+
+    transform:translateX(4px);
+
+}
+
+.settings-sidebar .active{
+
+    background:linear-gradient(135deg,#6366F1,#3B82F6);
+
+    color:white;
+
+    box-shadow:0 10px 25px rgba(99,102,241,.35);
+
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.settings-content{
+
+    flex:1;
+
+}
+
+/* =========================
+   CARD
+========================= */
+
+.glass-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+    animation:fadeIn .4s ease;
+
+}
+
+.glass-card h2{
+
+    margin:0 0 10px;
+
+    color:white;
+
+    font-size:28px;
+
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.glass-card input,
+.glass-card select{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.05);
+
+    color:white;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.glass-card input:focus,
+.glass-card select:focus{
+
+    border-color:#6366F1;
+
+    box-shadow:0 0 0 3px rgba(99,102,241,.15);
+
+}
+
+.glass-card select option{
+
+    background:#1E293B;
+
+}
+
+/* =========================
+   LABEL
+========================= */
+
+.glass-card label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#CBD5E1;
+
+    font-size:15px;
+
+}
+
+/* =========================
+   SAVE BUTTON
+========================= */
+
+.save-btn{
+
+    width:220px;
+
+    margin-top:10px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#6366F1,#3B82F6);
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.save-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(99,102,241,.35);
+
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(12px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+.settings{
+
+    flex-direction:column;
+
+}
+
+.settings-sidebar{
+
+    width:100%;
+
+}
+
+.save-btn{
+
+    width:100%;
+
+}
+
+}

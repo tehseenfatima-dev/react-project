@@ -1,0 +1,39 @@
+.chart-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  margin-top: 20px;
+}
+
+/* HEADER INSIDE CHART */
+.chart-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 10px;
+}
+
+.chart-card h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.chart-card span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* DARK MODE */
+body.dark .chart-card {
+  background: #1e293b;
+  box-shadow: none;
+  border: 1px solid #334155;
+}
+
+body.dark .chart-card span {
+  color: #94a3b8;
+}

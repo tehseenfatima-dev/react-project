@@ -1,0 +1,42 @@
+export const products = [
+  {
+    id: 1,
+    name: "iPhone 15",
+    price: "$999",
+    category: "Mobile",
+    stock: 24,
+    status: "In Stock",
+  },
+  {
+    id: 2,
+    name: "MacBook Pro",
+    price: "$1999",
+    category: "Laptop",
+    stock: 8,
+    status: "In Stock",
+  },
+  {
+    id: 3,
+    name: "AirPods Pro",
+    price: "$199",
+    category: "Accessories",
+    stock: 0,
+    status: "Out of Stock",
+  },
+  {
+    id: 4,
+    name: "Apple Watch",
+    price: "$499",
+    category: "Wearable",
+    stock: 12,
+    status: "In Stock",
+  },
+  {
+    id: 5,
+    name: "iPad Air",
+    price: "$799",
+    category: "Tablet",
+    stock: 5,
+    status: "Low Stock",
+  },
+];

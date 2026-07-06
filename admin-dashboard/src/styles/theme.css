@@ -1,0 +1,77 @@
+:root {
+  --bg: #0F172A;
+  --card: rgba(255,255,255,0.08);
+  --border: rgba(255,255,255,0.12);
+
+  --primary: #6366F1;
+  --secondary: #3B82F6;
+
+  --text: #ffffff;
+  --muted: #cbd5e1;
+
+  --radius: 14px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+}
+
+/* GLOBAL CARD */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+
+  padding: 20px;
+
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* INPUT */
+input {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+
+  padding: 10px;
+  border-radius: 12px;
+
+  color: white;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--primary);
+}
+
+/* BUTTON */
+button {
+  background: var(--primary);
+  color: white;
+
+  border: none;
+  padding: 10px 14px;
+
+  border-radius: 12px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--secondary);
+}
+
+/* TEXT */
+p {
+  color: var(--muted);
+}

@@ -1,0 +1,13 @@
+.customers {
+  padding: 10px;
+}
+
+.customers h1 {
+  margin-bottom: 10px;
+}
+
+.customer-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
