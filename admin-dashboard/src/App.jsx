@@ -3,14 +3,14 @@ import { AnimatePresence } from "framer-motion";
 
 import Layout from "./layout/Layout";
 
-import Dashboard from "./pages/Dashboard/Dashboard";
-import Users from "./pages/Users/Users";
-import Products from "./pages/Products/Products";
-import Orders from "./pages/Orders/Orders";
-import Analytics from "./pages/Analytics/Analytics";
-import Customers from "./pages/Customers/Customers";
-import Messages from "./pages/Messages/Messages";
-import Settings from "./pages/Settings/Settings";
+import Dashboard from "./Pages/Dashboard/Dashboard";
+import Users from "./Pages/Users/Users";
+import Products from "./Pages/Products/Products";
+import Orders from "./Pages/Orders/Orders";
+import Analytics from "./Pages/Analytics/Analytics";
+import Customers from "./Pages/Customers/Customers";
+import Messages from "./Pages/Messages/Messages";
+import Settings from "./Pages/Settings/Settings";
 
 import Login from "./components/Auth/Login";
 import Signup from "./components/Auth/Signup";
@@ -23,11 +23,11 @@ export default function App() {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
 
-        {/* Authentication */}
+        {/* AUTH */}
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
 
-        {/* Dashboard */}
+        {/* DASHBOARD WRAPPED WITH LAYOUT */}
         <Route
           path="/dashboard"
           element={
@@ -116,7 +116,7 @@ export default function App() {
           }
         />
 
-        {/* Redirect unknown routes */}
+        {/* FALLBACK */}
         <Route path="*" element={<Navigate to="/" replace />} />
 
       </Routes>
